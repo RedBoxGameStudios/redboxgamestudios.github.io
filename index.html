@@ -212,7 +212,13 @@
             width: 25%;    margin-left: 35%;"/>
         </div>
     </div>
-    <link rel="import" href="footer.html">
+
+    <script> 
+        $(function(){
+          $("#includedContent").load("footer.html"); 
+        });
+    </script>
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
