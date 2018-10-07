@@ -109,11 +109,11 @@
 <script type="text/javascript">
     var map;
     function initMap() {
+        var latlng = new google.maps.LatLng(39.305, -76.617);
         map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: 34.029602, lng: -118.452416},
-            zoom: 13
-        });
-        map.data.loadGeoJson('data.json');
+         center: latlng,
+		 zoom: 12}
+		);
     }
     google.maps.event.addDomListener(window, 'load', initialize);
 </script>
