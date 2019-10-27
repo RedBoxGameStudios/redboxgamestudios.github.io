@@ -651,14 +651,51 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .bg-primary3 {
   background: #445878;
-  background: -webkit-gradient(linear, left top, left bottom, from(#445878), to(#de4949));
-  background: linear-gradient(#445878, #de4949);
+  background: -webkit-gradient(linear, left top, left bottom, from(#de4949), to(#de4949));
+  background: linear-gradient(#de4949, #de4949);
 }
 
 .bg-primary4 {
   background: #de4949;
   background: -webkit-gradient(linear, left top, left bottom, from(#de4949), to(#fdcc52));
   background: linear-gradient(#de4949, #fdcc52);
+}
+
+.bg-primary5{
+  background: #fff8e7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff8e7), to(#fff8e7));
+  background: linear-gradient(#fff8e7, #fff8e7);
+}
+
+.bg-primary6 {
+  background: #30976E;
+  background: -webkit-gradient(linear, left top, left bottom, from(#30976E), to(#30976E));
+  background: linear-gradient(#30976E, #30976E);
+}
+
+.bg-primary7 {
+  background: #30976E;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f1875c), to(#dc585c));
+  background: linear-gradient(#f1875c, #dc585c);
+}
+
+.bg-primary8 {
+  background: #30976E;
+  background: -webkit-gradient(linear, left top, left bottom, from(#462b59), to(#462b59));
+  background: linear-gradient(#462b59, #462b59);
+}
+
+.bg-primary9 {
+  background: #30976E;
+  background: -webkit-gradient(linear, left top, left bottom, from(#70c0d8), to(#164068));
+  background: linear-gradient(#70c0d8, #164068);
+}
+
+
+.bg-primary10 {
+  background: #30976E;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4e85c3), to(#4e85c3));
+  background: linear-gradient(#4e85c3, #4e85c3);
 }
 
 .text-primary {
@@ -668,6 +705,19 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 .text-primary2 {
   color: #FFFFFF;
 }
+
+.text-primary-orange {
+  color: #fdcc52;
+}
+
+.text-primary3 {
+  color: #818181;
+}
+
+.text-primary4 {
+  color: #f7fa5b;
+}
+
 
 .no-gutter > [class*='col-'] {
   padding-right: 0;
