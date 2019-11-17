@@ -12,7 +12,6 @@ body {
 
 body {
   font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
-  font-display: swap;
 }
 
 a {
@@ -45,7 +44,6 @@ h6 {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
-  font-display: swap;
 }
 
 p {
@@ -70,7 +68,6 @@ section h2 {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
-  font-display: swap;
 }
 
 #mainNav .navbar-brand {
@@ -78,7 +75,6 @@ section h2 {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
-  font-display: swap;
 }
 
 #mainNav .navbar-brand-inner-pages {
@@ -86,7 +82,6 @@ section h2 {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
-  font-display: swap;
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
@@ -108,7 +103,6 @@ section h2 {
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-display: swap;
 }
 
 #mainNav .navbar-nav > li > a.active {
@@ -129,6 +123,15 @@ section h2 {
 #mainNav .navbar-nav > li > a:focus:hover {
   color: #fdcc52;
 }
+
+#centered-text {
+  text-align: center;
+}
+
+#empty-spaces {
+  display: block;
+}
+
 
 @media (min-width: 992px) {
   #mainNav {
@@ -182,6 +185,14 @@ section h2 {
   #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
     color: #fdcc52;
   }
+
+  #centered-text{
+    text-align: unset;
+  }
+
+  #empty-spaces {
+    display: none;
+  }
 }
 
 header.masthead {
@@ -205,6 +216,56 @@ header.wordchef {
   background: -webkit-gradient(linear, left top, left bottom, from(#903c25), to(#903c25));
   background: linear-gradient(#903c25, #903c25);
 }
+
+header.slidingpuzzle {
+  position: relative;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  color: white;
+  background: #de4949;
+  background: -webkit-gradient(linear, left top, left bottom, from(#de4949), to(#fdcc52));
+  background: linear-gradient(#de4949, #fdcc52);
+}
+
+header.alphabet {
+  position: relative;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  color: white;
+  background: #4e85c3;
+}
+
+header.cosmic {
+  position: relative;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  color: white;
+  background: #fff8e7;
+}
+
+header.little-meaty {
+  position: relative;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  color: white;
+  background: #de4949;
+}
+
+header.beefo {
+  position: relative;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  color: white;
+  background: #92CDCF;
+  background: -webkit-gradient(linear, left top, left bottom, from(#92CDCF), to(#445878));
+  background: linear-gradient(#92CDCF, #445878);
+}
+
 
 header.blazeup {
   position: relative;
@@ -248,17 +309,6 @@ header.balldropped {
   background: #164068;
   background: -webkit-gradient(linear, left top, left bottom, from(#70c0d8), to(#164068));
   background: linear-gradient(#70c0d8, #164068);
-}
-
-header.slidingpuzzle {
-  position: relative;
-  width: 100%;
-  padding-top: 150px;
-  padding-bottom: 100px;
-  color: white;
-  background: #de4949;
-  background: -webkit-gradient(linear, left top, left bottom, from(#de4949), to(#fdcc52));
-  background: linear-gradient(#de4949, #fdcc52);
 }
 
 header.masthead .header-content {
@@ -814,12 +864,29 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   background: linear-gradient(#fdcc52, #fdcc52);
 }
 
+.bg-primary14 {
+  background: #445878;
+  background: -webkit-gradient(linear, left top, left bottom, from(#445878), to(#92CDCF));
+  background: linear-gradient(#445878, #92CDCF);
+}
+
+.bg-primary15 {
+  background: #ffffff;
+  opacity: 0;
+}
+
 .text-primary {
   color: #fdcc52;
 }
 
 .text-primary2 {
   color: #FFFFFF;
+}
+
+
+.text-primary2-white  {
+  color: #FFFFFF;
+  opacity: 1;
 }
 
 .text-primary-orange {
@@ -861,12 +928,15 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-display: swap;
 }
 
 .btn-xl {
   font-size: 11px;
-  padding: 15px 45px;
+  padding: 15px 35px;
+}
+
+.btn-x1-cosmic {
+  background-color: #818181;
 }
 
 .list-group-item-no-border {
@@ -875,6 +945,13 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   padding: 0.75rem 1.25rem;
   margin-bottom: -1px;
   background-color: #fff;
+}
+
+.list-group-item-no-border-transparent {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: -1px;
 }
 
 .responsive-container {

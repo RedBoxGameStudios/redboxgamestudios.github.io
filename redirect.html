@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="RedboX Game Studios redirect url">
+        <meta name="keywords" content="Games,Redbox,Studios,Ball,Sliding,Puzzle,Word,Meaty,Beefo,ABC,Tracing,Alphabet,Crazy,Crazyball,Cosmic,Latte">
+        <meta name="author" content="RedboX Game Studios">
+        <link rel="canonical" href="https://redboxgamestudios.com/redirect.html">
+        <meta name="google-site-verification" content="E-FVOlmLrHwcR7llYW2t4sBnPpO48eZ1GkB5R_JCSx8" />
+
+        <!-- Social: Facebook / Open Graph -->
+        <meta property="og:title" content="RedboX Game Studios - Free To Play Game">
+        <meta property="og:url" content="https://redboxgamestudios.com/redirect.html">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="RedboX Game Studios">
+        <meta property="article:author" content="https://www.facebook.com/RedboXGameStudios">
+        <meta property="og:description" content="RedboX Game Studios redirect url." >
+        <meta property="og:image" content="https://redboxgamestudios.com/img/redbox.jpg">
+
+
+        <!-- Social: Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@studio_redbox">
+        <meta name="twitter:creator" content="@studio_redbox">
+        <meta name="twitter:title" content="RedboX Game Studios">
+        <meta name="twitter:description" content="RedboX Game Studios redirect url">
+        <meta name="twitter:url" content="https://redboxgamestudios.com/redirect.html" />
+        <meta name="twitter:image" content="https://redboxgamestudios.com/img/redbox.jpg">
+
+        <title>RedboX Game Studios - Free To Play Game</title>
+        
+        <script type="text/javascript" src="js/redirect.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/default.css" />
+    </head>
+<body>
+    <div class="title">
+        RedboX Game Studios
+    </div>
+    <div class="subtitle">
+        You are redirected to the game of the RedboX Game Studio.
+    </div>
+    <script>        
+        
+    //var url = "https://redboxgamestudios.com/redirect.html?game=blaze-up"; // or window.location.href for current url
+  /*  var url = window.location.href;
+    var captured = 'none';
+    if (url.includes('?game')) {
+        captured = /game=([^&]+)/.exec(url)[1]; // Value is in [1] ('384' in our case)
+    }
+    var result = captured ? captured : 'none';
+
+    console.log(result);
+    
+    if(result === 'blaze-up'){
+        AppRedirect.redirect({
+            iosApp: 'blaze-up://',
+            iosAppStore: 'https://apps.apple.com/us/app/blaze-up/id1480744042',
+            android: {
+                'host': 'post/?message=', // Host/path/querystring part in a custom scheme URL
+                // 'action': '', // Equivalent to ACTION in INTENTs
+                // 'category': '', // Equivalent to CATEGORY in INTENTs
+                // 'component': '', // Equivalent to COMPONENT in INTENTs
+                'scheme': 'blazeup', // Scheme part in a custom scheme URL
+                'package': 'com.redbox.blazeup', // Package name in Play store
+                'fallback': 'https://play.google.com/store/apps/details?id=com.redbox.blazeup'
+            }
+
+        });
+    } else if(result === 'none'){
+        AppRedirect.redirect({
+            iosAppStore: 'https://apps.apple.com/us/developer/burkan-yilmaz/id1390247565',
+            android: {
+                'developer': 'true'
+            }
+
+        });
+    }*/
+    var start = Date.now();
+    function try_close(){
+        location.replace('about:blank');
+    }
+
+    function store_or_close(){
+        var now = Date.now();
+        if (now - start > 3000) {
+            try_close();
+        } else {
+            if (/iP(hone|ad|od)/.test(navigator.userAgent)) {
+                window.location.replace("https://apps.apple.com/us/app/blaze-up/id1480744042");
+            } else if (/Android/.test(navigator.userAgent)) {
+                window.location.replace("http://play.google.com/store/apps/details?id=com.redbox.blazeup");
+            }
+            setInterval(try_close, 1000);
+        }
+    }
+
+    setInterval(store_or_close, 2000);
+    </script>
+</body>
+</html>
